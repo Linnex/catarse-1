@@ -1,0 +1,55 @@
+- content_for :title, "#{@project.name} · #{CatarseSettings[:company_name]}"
+
+- content_for :js do
+  = javascript_include_tag "jquery"
+  = javascript_include_tag 'redactor', '//www.google.com/jsapi'
+- content_for :stylesheets do
+  = stylesheet_link_tag 'redactor'
+
+= render 'shared/header'
+
+#google_oauth_client data-token=CatarseSettings[:google_oauth_client]
+
+#send-message.modal-backdrop.w-hidden
+  .modal-dialog-outer
+    .modal-dialog-inner.modal-dialog-small
+      a.fa.fa-close.fa-lg.modal-close.w-inline-block
+      .modal-dialog-header
+        .fontsize-large.u-text-center
+          span.fa.fa-times-circleM
+          ' Confirmar cancelamento
+      .modal-dialog-content
+        = simple_form_for @project do |f|
+          =  hidden_field_tag 'anchor', 'posts'
+          =  hidden_field_tag 'cancel_project', 'true'
+          = f.simple_fields_for :posts, @project.posts.build do |form|
+            .fontsize-smaller.u-marginbottom-20 Conte porque você está cancelando sua campanha. Essa mensagem será enviada por email para os seus apoiadores e estará pública na aba "Novidades" do seu projeto no Catarse.
+            .w-form
+              = form.label :title, as: :string, class: 'field-label fontweight-semibold'
+              = form.input_field :title, as: :string, class: 'w-input text-field positive'
+
+              = form.label :comment, as: :string, class: 'field-label fontweight-semibold'
+              = form.input_field :comment_html, class: 'redactor text-field'
+            div
+              .w-row
+                .w-col.w-col-3
+                .u-text-center.w-col.w-col-6
+                  = form.submit 'Cancelar campanha', class: 'btn btn-inactive btn-large u-marginbottom-20'
+                  #modal-close.fontsize-small.link-hidden-light  Cancelar
+                .w-col.w-col-3
+
+- if params[:show_modal].present?
+  .modal-backdrop
+    .modal-dialog-outer
+      .modal-dialog-inner.modal-dialog-small
+        a.w-inline-block.modal-close.fa.fa-close.fa-lg  href="#"
+        .modal-dialog-content.u-text-center
+          .fa.fa-check-circle.fa-5x.text-success.u-marginbottom-40
+          p.fontsize-large Seu prazo foi definido com sucesso! Você tem até o dia #{@project.display_expires_at}, às 23h59, para captar recursos para a sua campanha. Depois que o seu projeto for finalizado e você confirmar seus dados bancários, o Catarse irá depositar o dinheiro na sua conta corrente em um prazo de 10 dias úteis.
+.w-section.section-product[class=@project.mode]
+#project-insights-root.min-height-70[data-mithril="Insights" data-id=@project.id]
+
+- content_for :application_js do
+  = javascript_include_tag "//apis.google.com/js/client.js", "api/application"
+
+= render 'shared/footer'
