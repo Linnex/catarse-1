@@ -2,15 +2,14 @@ pt:
   devise:
     passwords:
       new:
-        no_account_html: "Não tem conta?"
+        no_account_html: "Do not have an account?"
         titles:
           site: 'Redefinir senha'
           header: 'Redefinir senha'
         links:
-          register: "Cadastre-se"
+          register: "Sign up"
         form:
           labels:
             email: 'Após inserir seu email, iremos enviar uma notificação com instruções de como redefinir sua senha'
           inputs:
             submit: 'Redefinir'
-

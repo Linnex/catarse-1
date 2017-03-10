@@ -1,43 +1,44 @@
-pt:
+en:
   layouts:
     footer:
       links:
-        how_it_works: Como funciona
-        novelty: Novidade
-        rate: Nossa Taxa
-        jobs: Trabalhe conosco
-        blog: Blog
-        contact: Contato
-        press: Imprensa
-        discover: Explore projetos
-        start: 'Como funciona'
-        expiring: Na reta final
+        how_it_works: How does it work?
+        novelty: Novelty
+        rate: Our Rate
+        jobs: Jobs
+        blog: Blogs
+        contact: Contact
+        press: News and Press
+        discover: Explore Projects
+        start: How does it work?
+        expiring: Expiring
         facebook: Facebook
-        team: Nosso time
+        team: Our Team
         flex: Catarse flex
-        crowdfunding_stats: "Retrato FC Brasil 2013/2014"
-        faq: Ajuda
-        guides: Guia dos Realizadores
+        crowdfunding_stats: "Portrait FC Brazil 2013/2014"
+        faq: FAQ
+        guides: Guide for Filmmakers
         feedback: Feedback
         github: Github
         instagram: Instagram
-        near: Próximos a mim
-        privacy: Política de privacidade
-        recents: Recentes
-        recommended: Recomendados
-        submit: Comece seu projeto
-        terms: Termos de uso
+        near: Near you
+#        press: News and Press
+        privacy: Privacy & Policy
+        recents: Recent
+        recommended: Recommended
+        submit: Start your Project
+        terms: Terms of use
         twitter: Twitter
-        help_support: Central de Suporte
-        score: Populares
-        finished: Finalizados
-        online: No ar
+        help_support: Support Center
+        score: Popular
+        finished: Finished
+        online: Online
       texts:
-        copyleft: Feito com amor.
-        email: Digite seu email
+        copyleft: Made with love.
+        email: Your Email address
       titles:
-        about: Ajuda
-        contact: Bem-vindo
-        newsletter: Assine nossa news
-        sitemap: Navegue
-        social: Redes sociais
+        about: Help
+        contact: Welcome
+        newsletter: Newsletter
+        sitemap: Sitemap
+        social: Social media

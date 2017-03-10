@@ -2,22 +2,21 @@ pt:
   devise:
     registrations:
       new:
-        have_account_html: "Já tem cadastro?"
+        have_account_html: "Already have an account?"
         titles:
-          site: 'Cadastre-se'
-          header: 'Cadastre-se'
+          site: 'Sign Up'
+          header: 'Sign Up'
         links:
-          login: "Faça seu login"
+          login: "Login"
         form:
           labels:
-            show_password: 'Exibir senha'
-            name: 'Nome completo'
-            password: 'Senha'
-            newsletter: 'Quero receber novidades do Catarse no meu email'
-            accept: 'Ao efetuar cadastro, você está aceitando nossos <a href="%{terms_url}" class="alt-link" target="_blank">termos de uso</a> e <a class="alt-link" href="%{privacy_url}" target="_blank">política de privacidade</a>'
+            show_password: 'Show Password'
+            name: 'Name'
+            password: 'Password'
+            newsletter: 'I want to subscribe to Catarse newsletter'
+            accept: 'I accept the terms and conditions <a href="%{terms_url}" class="alt-link" target="_blank">termos de uso</a> e <a class="alt-link" href="%{privacy_url}" target="_blank">política de privacidade</a>'
           hint:
-            password_length: 'Mínimo de 6 caracteres'
+            password_length: 'Minimum 6 charectors'
           inputs:
-            submit: 'Efetuar cadastro'
-            facebook: 'Entrar com Facebook'
-
+            submit: 'Register'
+            facebook: 'Login With Facebook'

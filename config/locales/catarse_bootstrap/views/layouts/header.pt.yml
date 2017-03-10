@@ -10,14 +10,13 @@ pt:
       profile: Meus dados
       projects: Meus projetos
       signin: Login
-      signup: Cadastre-se
-      submit: Comece seu projeto
-      search: Busque projetos
+      signup: Sign Up
+      submit: Start New Project
+      search: Start Project
     login:
       login_with_facebook: entre com sua conta do facebook
     user:
       my_contributions: Meus apoios
-      logout: Sair
+      logout: Logout
       my_credits: Saldo de créditos
       refund_link: Solicitar reembolso
-

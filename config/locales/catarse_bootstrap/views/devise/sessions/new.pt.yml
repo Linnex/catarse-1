@@ -2,19 +2,18 @@ pt:
   devise:
     sessions:
       new:
-        no_account_html: "Não tem conta?"
+        no_account_html: "Do not have an account?"
         titles:
           site: 'Login'
           header: 'Login'
         links:
-          register: "Cadastre-se"
-          password: "Senha"
-          forgot_password: "Esqueci minha senha"
+          register: "Sign up"
+          password: "Password"
+          forgot_password: "Forgot Password"
         form:
           labels:
-            remember_me: 'Permanecer conectado'
+            remember_me: 'Remember Me'
           inputs:
             submit: 'Fazer login'
             password: 'Senha'
             facebook: 'Entrar com Facebook'
-
